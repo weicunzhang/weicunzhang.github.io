@@ -1,0 +1,308 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Academic homepage of Weicun Zhang, with research interests, selected publications, and preprints.">
+  <meta name="author" content="Weicun Zhang">
+  <meta name="theme-color" content="#ffffff">
+  <title>Weicun Zhang — Academic Homepage</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --text: #20252b;
+      --muted: #68727d;
+      --link: #245b91;
+      --rule: #e5e9ed;
+      --paper: #ffffff;
+      --width: 780px;
+    }
+
+    * { box-sizing: border-box; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      margin: 0;
+      background: var(--paper);
+      color: var(--text);
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 17px;
+      line-height: 1.68;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    a {
+      color: var(--link);
+      text-decoration: none;
+      text-underline-offset: 3px;
+    }
+
+    a:hover, a:focus-visible { text-decoration: underline; }
+
+    a:focus-visible {
+      outline: 2px solid var(--link);
+      outline-offset: 3px;
+      border-radius: 2px;
+    }
+
+    .page {
+      width: min(var(--width), calc(100% - 44px));
+      margin: 0 auto;
+      padding: 58px 0 42px;
+    }
+
+    header {
+      padding-bottom: 24px;
+      border-bottom: 1px solid var(--rule);
+    }
+
+    h1 {
+      margin: 0;
+      font-size: clamp(2.15rem, 6vw, 2.75rem);
+      font-weight: 600;
+      letter-spacing: -0.035em;
+      line-height: 1.15;
+    }
+
+    .subtitle {
+      margin: 8px 0 0;
+      color: var(--muted);
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 0.91rem;
+      letter-spacing: 0.025em;
+    }
+
+    nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px 22px;
+      margin-top: 22px;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 0.9rem;
+    }
+
+    nav a { white-space: nowrap; }
+
+    main { padding-top: 4px; }
+
+    section {
+      padding: 27px 0 25px;
+      border-bottom: 1px solid var(--rule);
+      scroll-margin-top: 18px;
+    }
+
+    h2 {
+      margin: 0 0 13px;
+      font-size: 1.38rem;
+      font-weight: 600;
+      letter-spacing: -0.015em;
+    }
+
+    p { margin: 0 0 12px; }
+
+    p:last-child { margin-bottom: 0; }
+
+    ul, ol {
+      margin: 8px 0 0;
+      padding-left: 1.35rem;
+    }
+
+    li { padding-left: 0.12rem; }
+
+    .interests li { margin: 3px 0; }
+
+    .publications {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .publications li {
+      margin: 0 0 15px;
+      padding-left: 0;
+    }
+
+    .publications li:last-child { margin-bottom: 0; }
+
+    .pub-title { font-weight: 600; }
+
+    .pub-meta {
+      display: block;
+      margin-top: 2px;
+      color: var(--muted);
+      font-size: 0.94rem;
+    }
+
+    .pub-links {
+      display: inline-block;
+      margin-left: 4px;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 0.78rem;
+      white-space: nowrap;
+    }
+
+    .year {
+      display: inline-block;
+      min-width: 3.2rem;
+      color: var(--muted);
+      font-variant-numeric: tabular-nums;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 0.88rem;
+    }
+
+    .note {
+      color: var(--muted);
+      font-size: 0.91rem;
+    }
+
+    footer {
+      padding-top: 22px;
+      color: var(--muted);
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 0.86rem;
+    }
+
+    footer p { margin: 0; }
+
+    @media (max-width: 520px) {
+      body { font-size: 16px; }
+      .page {
+        width: calc(100% - 34px);
+        padding-top: 36px;
+      }
+      nav { gap: 7px 16px; }
+      section { padding: 23px 0; }
+    }
+
+    @media print {
+      .page { width: 100%; padding: 0; }
+      nav { display: none; }
+      a { color: inherit; }
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <header>
+      <h1>Weicun Zhang</h1>
+      <p class="subtitle">Academic Homepage</p>
+      <nav aria-label="Main navigation">
+        <a href="#about">About Me</a>
+        <a href="#research">Research Interests</a>
+        <a href="#publications">Publications</a>
+        <a href="#preprints">Preprints</a>
+      </nav>
+    </header>
+
+    <main>
+      <section id="about">
+        <h2>About Me</h2>
+        <p>
+          Weicun Zhang received the Ph.D. degree in Control Theory and Applications
+          from Tsinghua University in 1993. He retired from the School of Automation
+          and Electrical Engineering at the University of Science and Technology
+          Beijing in November 2022.
+        </p>
+        <p>
+          His earlier academic work focused on adaptive control, multiple-model
+          adaptive control, and nonlinear systems. His current research interests
+          include analytic number theory, particularly the Riemann zeta function,
+          Dirichlet L-functions, and related questions concerning zeros of zeta
+          and L-functions.
+        </p>
+        <p>
+          <a href="https://orcid.org/0000-0003-0047-0558"
+             target="_blank" rel="noopener noreferrer">ORCID: 0000-0003-0047-0558</a>
+        </p>
+      </section>
+
+      <section id="research">
+        <h2>Research Interests</h2>
+        <ul class="interests">
+          <li>Analytic number theory</li>
+          <li>The Riemann zeta function and completed zeta functions</li>
+          <li>Dirichlet L-functions and automorphic L-functions</li>
+          <li>Zeros of zeta and L-functions</li>
+          <li>Entire functions and infinite-product representations</li>
+        </ul>
+      </section>
+
+      <section id="publications">
+        <h2>Publications</h2>
+        <p class="note">Selected publications in control theory and nonlinear systems.</p>
+        <ol class="publications">
+          <li>
+            <span class="year">2025</span>
+            <span class="pub-title">U-control — a universal platform for control system design with inversion/cancellation of nonlinearity, dynamic and coupling through model-based to model-free procedures.</span>
+            <span class="pub-meta">Quanmin Zhu, Weicun Zhang, Shaoyuan Li, Qiang Chen, Jing Na, and Haigang Ding. <em>International Journal of Systems Science</em>, 56(3), 484–501.</span>
+            <span class="pub-links"><a href="https://doi.org/10.1080/00207721.2024.2395925" target="_blank" rel="noopener noreferrer">DOI</a></span>
+          </li>
+          <li>
+            <span class="year">2023</span>
+            <span class="pub-title">From Nonlinear Dominant System to Linear Dominant System: Virtual Equivalent System Approach for Multiple Variable Self-Tuning Control System Analysis.</span>
+            <span class="pub-meta">Jinghui Pan, Kaixiang Peng, and Weicun Zhang. <em>Entropy</em>, 25(1), 173.</span>
+            <span class="pub-links"><a href="https://doi.org/10.3390/e25010173" target="_blank" rel="noopener noreferrer">DOI</a></span>
+          </li>
+          <li>
+            <span class="year">2023</span>
+            <span class="pub-title">Non-Predictive Model-Free Control of Nonlinear Systems with Unknown Input Time Delay.</span>
+            <span class="pub-meta">Quanmin Zhu, Jianhua Zhang, and Weicun Zhang. <em>Entropy</em>, 25(7), 1076.</span>
+            <span class="pub-links"><a href="https://doi.org/10.3390/e25071076" target="_blank" rel="noopener noreferrer">DOI</a></span>
+          </li>
+          <li>
+            <span class="year">2022</span>
+            <span class="pub-title">Disturbance Observer-Based Fault-Tolerant Control for Robotic Systems With Guaranteed Prescribed Performance.</span>
+            <span class="pub-meta">Haifeng Huang, Wei He, Jiashu Li, Bin Xu, Chenguang Yang, and Weicun Zhang. <em>IEEE Transactions on Cybernetics</em>, 52(2), 772–783.</span>
+            <span class="pub-links"><a href="https://doi.org/10.1109/TCYB.2019.2921254" target="_blank" rel="noopener noreferrer">DOI</a></span>
+          </li>
+          <li>
+            <span class="year">2015</span>
+            <span class="pub-title">Further results on stable weighted multiple model adaptive control: Discrete-time stochastic plant.</span>
+            <span class="pub-meta">Weicun Zhang. <em>International Journal of Adaptive Control and Signal Processing</em>, 29(12), 1497–1514.</span>
+            <span class="pub-links"><a href="https://doi.org/10.1002/acs.2555" target="_blank" rel="noopener noreferrer">DOI</a></span>
+          </li>
+          <li>
+            <span class="year">2010</span>
+            <span class="pub-title">On the stability and convergence of self-tuning control–virtual equivalent system approach.</span>
+            <span class="pub-meta">Weicun Zhang. <em>International Journal of Control</em>, 83(5), 879–896.</span>
+            <span class="pub-links"><a href="https://doi.org/10.1080/00207170903487421" target="_blank" rel="noopener noreferrer">DOI</a></span>
+          </li>
+        </ol>
+      </section>
+
+      <section id="preprints">
+        <h2>Preprints</h2>
+        <ol class="publications">
+          <li>
+            <span class="year">2026</span>
+            <span class="pub-title">
+              <a href="https://www.preprints.org/manuscript/202506.0481"
+                 target="_blank" rel="noopener noreferrer">On the Extended, Generalized, and Grand Riemann Hypotheses: A Unified Approach via the Divisibility Property of Entire Functions.</a>
+            </span>
+            <span class="pub-meta">Preprint, version 22, posted 2 November 2026.</span>
+          </li>
+          <li>
+            <span class="year">2025</span>
+            <span class="pub-title">
+              <a href="https://www.preprints.org/manuscript/202108.0146"
+                 target="_blank" rel="noopener noreferrer">A Proof of the Riemann Hypothesis via a New Expression of ξ(s).</a>
+            </span>
+            <span class="pub-meta">Preprint, version 55, posted 9 December 2025.</span>
+          </li>
+        </ol>
+      </section>
+    </main>
+
+    <footer>
+      <p>
+        <a href="https://orcid.org/0000-0003-0047-0558"
+           target="_blank" rel="noopener noreferrer">ORCID</a>
+        <span aria-hidden="true"> · </span>
+        <a href="https://github.com/weicunzhang"
+           target="_blank" rel="noopener noreferrer">GitHub</a>
+      </p>
+    </footer>
+  </div>
+</body>
+</html>
