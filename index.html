@@ -13,6 +13,7 @@
       --text: #20252b;
       --muted: #68727d;
       --link: #245b91;
+      --heading: #168BFF;
       --rule: #e5e9ed;
       --paper: #ffffff;
       --width: 780px;
@@ -58,6 +59,7 @@
     }
 
     h1 {
+      color: var(--heading);
       margin: 0;
       font-size: clamp(2.15rem, 6vw, 2.75rem);
       font-weight: 600;
@@ -93,6 +95,7 @@
     }
 
     h2 {
+      color: var(--heading);
       margin: 0 0 13px;
       font-size: 1.38rem;
       font-weight: 600;
@@ -126,6 +129,8 @@
     .publications li:last-child { margin-bottom: 0; }
 
     .pub-title { font-weight: 600; }
+
+    .books-heading { color: var(--heading); }
 
     .pub-meta {
       display: block;
@@ -256,7 +261,7 @@
             <span class="pub-links"><a href="https://doi.org/10.1080/00207170903487421" target="_blank" rel="noopener noreferrer">DOI</a></span>
           </li>
           <li>
-            <span class="pub-title">Books</span>
+            <span class="pub-title books-heading">Books</span>
             <span class="pub-meta">
               <a href="https://www.waterstones.com/author/weicun-zhang/2708382/page/1"
                  target="_blank" rel="noopener noreferrer">Books by Weicun Zhang at Waterstones</a>
