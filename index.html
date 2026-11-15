@@ -113,8 +113,6 @@
 
     li { padding-left: 0.12rem; }
 
-    .interests li { margin: 3px 0; }
-
     .publications {
       list-style: none;
       padding: 0;
@@ -140,9 +138,16 @@
 
     .about-layout {
       display: grid;
-      grid-template-columns: 190px minmax(0, 1fr);
-      gap: 26px;
+      grid-template-columns: 260px minmax(0, 1fr);
+      gap: 34px;
       align-items: start;
+    }
+
+    .about-sidebar {
+      display: flex;
+      flex-direction: column;
+      gap: 22px;
+      min-width: 0;
     }
 
     .about-photo img {
@@ -152,6 +157,32 @@
       height: auto;
       border: 1px solid var(--rule);
       border-radius: 5px;
+    }
+
+    .education h3 {
+      color: var(--heading);
+      margin: 0 0 12px;
+      font-size: 1.2rem;
+      font-weight: 600;
+      letter-spacing: -0.015em;
+    }
+
+    .education-item { margin-bottom: 14px; }
+    .education-item:last-child { margin-bottom: 0; }
+
+    .education-date {
+      color: var(--muted);
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 0.82rem;
+      font-weight: 600;
+      line-height: 1.45;
+      margin-bottom: 3px;
+    }
+
+    .education-item p {
+      font-size: 0.91rem;
+      line-height: 1.5;
+      margin: 0;
     }
 
     .about-text p { margin-bottom: 12px; }
@@ -227,7 +258,7 @@
       <p class="subtitle">Academic Homepage</p>
       <nav aria-label="Main navigation">
         <a href="#about">About Me</a>
-        <a href="#research">Research Interests</a>
+        <a href="#education">Education</a>
         <a href="#publications">Publications</a>
         <a href="#preprints">Preprints</a>
       </nav>
@@ -237,9 +268,26 @@
       <section id="about">
         <h2>About Me</h2>
         <div class="about-layout">
-          <div class="about-photo">
-            <img src="assets/weicun-zhang.jpg" alt="Portrait of Weicun Zhang" loading="lazy">
-          </div>
+          <aside class="about-sidebar">
+            <div class="about-photo">
+              <img src="assets/weicun-zhang.jpg" alt="Portrait of Weicun Zhang" loading="lazy">
+            </div>
+            <div id="education" class="education">
+              <h3>Education</h3>
+              <div class="education-item">
+                <div class="education-date">September 1979 – July 1983</div>
+                <p>Undergraduate studies in the Department of Automation, Shenyang Institute of Technology, China.</p>
+              </div>
+              <div class="education-item">
+                <div class="education-date">September 1986 – July 1989</div>
+                <p>Postgraduate studies in the Department of Automatic Control, Beijing Institute of Technology, China.</p>
+              </div>
+              <div class="education-item">
+                <div class="education-date">September 1989 – May 1993</div>
+                <p>Doctoral studies in the Department of Automation, Tsinghua University, China.</p>
+              </div>
+            </div>
+          </aside>
           <div class="about-text">
             <p>
             Weicun Zhang retired in November 2022 from the School of Automation
@@ -268,17 +316,6 @@
             </p>
           </div>
         </div>
-      </section>
-
-      <section id="research">
-        <h2>Research Interests</h2>
-        <ul class="interests">
-          <li>Analytic number theory</li>
-          <li>The Riemann zeta function and completed zeta functions</li>
-          <li>Dirichlet L-functions and automorphic L-functions</li>
-          <li>Zeros of zeta and L-functions</li>
-          <li>Entire functions and infinite-product representations</li>
-        </ul>
       </section>
 
       <section id="publications">
