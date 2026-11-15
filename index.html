@@ -138,6 +138,25 @@
       letter-spacing: -0.015em;
     }
 
+    .about-layout {
+      display: grid;
+      grid-template-columns: 190px minmax(0, 1fr);
+      gap: 26px;
+      align-items: start;
+    }
+
+    .about-photo img {
+      display: block;
+      width: 100%;
+      max-width: 190px;
+      height: auto;
+      border: 1px solid var(--rule);
+      border-radius: 5px;
+    }
+
+    .about-text p { margin-bottom: 12px; }
+    .about-text p:last-child { margin-bottom: 0; }
+
     .pub-meta {
       display: block;
       margin-top: 2px;
@@ -186,6 +205,14 @@
       section { padding: 23px 0; }
     }
 
+    @media (max-width: 680px) {
+      .about-layout {
+        grid-template-columns: 1fr;
+        gap: 18px;
+      }
+      .about-photo img { max-width: 160px; }
+    }
+
     @media print {
       .page { width: 100%; padding: 0; }
       nav { display: none; }
@@ -209,31 +236,38 @@
     <main>
       <section id="about">
         <h2>About Me</h2>
-        <p>
-          Weicun Zhang retired in November 2022 from the School of Automation
-          and Electrical Engineering at the University of Science and Technology
-          Beijing, where he pursued academic work in control theory and engineering.
-        </p>
-        <p>
-          His earlier academic work focused on adaptive control, multiple-model
-          adaptive control, and nonlinear systems. His current research interests
-          include analytic number theory, particularly the Riemann Hypothesis,
-          the Extended Riemann Hypothesis (for Dedekind zeta functions), the
-          Generalized Riemann Hypothesis (for Dirichlet <em>L</em>-functions),
-          and the Grand Riemann Hypothesis (for cuspidal automorphic
-          <em>L</em>-functions, and for any kind of <em>L</em>-functions,
-          respectively).
-        </p>
-        <p>
-          <a href="https://orcid.org/0000-0003-0047-0558"
-             target="_blank" rel="noopener noreferrer">ORCID: 0000-0003-0047-0558</a>
-        </p>
-        <p>
-          Email:
-          <a href="mailto:weicunzhang@263.net">weicunzhang@263.net</a>
-          /
-          <a href="mailto:weicunzhang@ustb.edu.cn">weicunzhang@ustb.edu.cn</a>
-        </p>
+        <div class="about-layout">
+          <div class="about-photo">
+            <img src="assets/weicun-zhang.jpg" alt="Portrait of Weicun Zhang" loading="lazy">
+          </div>
+          <div class="about-text">
+            <p>
+            Weicun Zhang retired in November 2022 from the School of Automation
+            and Electrical Engineering at the University of Science and Technology
+            Beijing, where he pursued academic work in control theory and engineering.
+            </p>
+            <p>
+            His earlier academic work focused on adaptive control, multiple-model
+            adaptive control, and nonlinear systems. His current research interests
+            include analytic number theory, particularly the Riemann Hypothesis,
+            the Extended Riemann Hypothesis (for Dedekind zeta functions), the
+            Generalized Riemann Hypothesis (for Dirichlet <em>L</em>-functions),
+            and the Grand Riemann Hypothesis (for cuspidal automorphic
+            <em>L</em>-functions, and for any kind of <em>L</em>-functions,
+            respectively).
+            </p>
+            <p>
+            <a href="https://orcid.org/0000-0003-0047-0558"
+            target="_blank" rel="noopener noreferrer">ORCID: 0000-0003-0047-0558</a>
+            </p>
+            <p>
+            Email:
+            <a href="mailto:weicunzhang@263.net">weicunzhang@263.net</a>
+            /
+            <a href="mailto:weicunzhang@ustb.edu.cn">weicunzhang@ustb.edu.cn</a>
+            </p>
+          </div>
+        </div>
       </section>
 
       <section id="research">
